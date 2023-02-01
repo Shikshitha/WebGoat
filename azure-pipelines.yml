@@ -33,5 +33,5 @@ steps:
     dockerImageName: 'chandra635313/spring-boot-mongo'
     monitorWhen: 'always'
     failOnIssues: false
-    projectName: 'sekharreddy0463'
-    organization: 'sekharreddy0463'
+    projectName: 'Shikshitha'
+    organization: 'shikshitha'
