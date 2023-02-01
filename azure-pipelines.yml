@@ -41,4 +41,3 @@ steps:
     dockerImageName: 'chandra635313/spring-boot-mongo'
     monitorWhen: 'always'
     failOnIssues: false
-
