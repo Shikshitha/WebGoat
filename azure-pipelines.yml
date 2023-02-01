@@ -18,20 +18,18 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: DockerInstaller@0
+- task: DockerInstaller@0
   inputs:
-    dockerVersion: '17.09.0-ce'
-  
-- task: CmdLine@2
+   dockerVersion: '17.09.0-ce'
+- task: CmdLine@2
   inputs:
-  script:'docker pull chandra635313/spring-boot-mongo'
-
-- task: SnykSecurityScan@1
+   script: 'docker pull chandra635313/spring-boot-mongo'
+- task: SnykSecurityScan@1
   inputs:
-   serviceConnectionEndpoint: 'sekharreddy04631'
-    testType: 'container' 
-    dockerImageName: 'chandra635313/spring-boot-mongo'
-    monitorWhen: 'always'
-    failOnIssues: false
-    projectName: 'Shikshitha'
-    organization: 'shikshitha'
+   serviceConnectionEndpoint: 'sekharreddy04631'
+   testType: container
+   dockerImageName: 'chandra635313/spring-boot-mongo'
+   monitorWhen: 'always'
+   failOnIssues: false
+   projectName: 'Shikshitha'
+   organization: 'shikshitha'
