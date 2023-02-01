@@ -33,3 +33,12 @@ steps:
    failOnIssues: false
    projectName: 'Shikshitha'
    organization: 'shikshitha'
+
+- task: SnykSecurityScan@1
+  inputs:
+    serviceConnectionEndpoint: 'Snyk'
+    testType: 'container'
+    dockerImageName: 'chandra635313/spring-boot-mongo'
+    monitorWhen: 'always'
+    failOnIssues: false
+
